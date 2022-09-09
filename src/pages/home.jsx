@@ -130,8 +130,8 @@ const Home = () => {
                     </section>
 
                     {/* project Section */}
-                    <section className='projects' id="section-5"  data-aos="fade-up">
-                        <p className='heading'>Our Projects</p>
+                    <section className='projects' id="section-5">
+                        <p data-aos="fade-up" className='heading'>Our Projects</p>
                         <div className='projects_images'>
                             <img src={p1} alt=''/>
                             <img src={p2} alt=''/>
@@ -144,7 +144,7 @@ const Home = () => {
 
                     {/* skills Section */}
                     <section className='skills' id="section-6" data-aos="fade-up">
-                        <div className='skills_left'>
+                        <div className='skills_left' >
                             <div>
                                 <p className='heading'>Skills & <br/> Experience</p>
                                 <p className='specialtext'>- Hello i’m technologist that uses design, process and strategy to build greate products</p>
