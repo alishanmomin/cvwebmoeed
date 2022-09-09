@@ -33,7 +33,7 @@ const [clickIndex, setClickIndex] = useState(1)
             <ul>
                 <Scrollspy 
                     className="scrollspy" 
-                    items={ ['section-1', 'section-2', 'section-3', 'section-4', 'section-5'] } 
+                    items={ ['section-1', 'section-2', 'section-3', 'section-4', 'section-5', 'section-6', 'section-7'] } 
                     currentClassName="isCurrent">
                 <li><span>-1</span><a  href="#section-1">Hello</a></li>
                 <li><span>-2</span><a  href="#section-2">About</a></li>

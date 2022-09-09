@@ -22,6 +22,8 @@ import s5 from '../assets/images/Linkitsoft-profile-CV-24.png'
 import s6 from '../assets/images/Linkitsoft-profile-CV-25.png'
 import s7 from '../assets/images/Linkitsoft-profile-CV-26.png'
 
+import inputCircle from '../assets/images/Linkitsoft-profile-CV-27.png'
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init({
@@ -31,7 +33,7 @@ AOS.init({
 const Home = () => {
   return (
     <div className='header'>
-        <Navbar item={['section-1', 'section-2', 'section-3', 'section-4', 'section-5']} />
+        <Navbar item={['section-1', 'section-2', 'section-3', 'section-4', 'section-5', 'section-6', 'section-7']} />
         <div className='main'>
                 <div className="container">
 
@@ -140,8 +142,8 @@ const Home = () => {
                         </div>
                     </section>
 
-                    {/* project Section */}
-                    <section className='skills' id="section-5">
+                    {/* skills Section */}
+                    <section className='skills' id="section-6">
                         <div className='skills_left'>
                             <div>
                                 <p className='heading'>Skills & <br/> Experience</p>
@@ -209,6 +211,39 @@ const Home = () => {
                         </div>
                           <div className='skills_photo'>
                           <img src={zo}/>
+                          </div>
+                        </div>
+                    </section>
+
+                    {/* contact Section */}
+                    <section className='contact' id="section-7">
+                        <div className='contact_left'>
+                            <div>
+                                <p className='heading'>Lets Discuss Your Project </p>
+                            </div>
+                            <div>
+                                <div className='contact_info'>
+                                    <img src={s7} alt=''/>
+                                    <div>
+                                        <p>Email</p>
+                                        <p className='email'>zohaib@linkitsoft.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='contact_photo'>
+                                <img src={zo}/>
+                            </div>
+                        </div>
+                        <div className='contact_right'>
+                        
+                          <div className='contact_inputSection'>
+                            <img src={inputCircle}/>
+                            <div className='contact_inputBox'>
+                                <input type='text' placeholder='Name'/>
+                                <input type='text' placeholder='Email'/>
+                                <input type='text' placeholder='Subject Line'/>
+                                <input type='text' placeholder='Type Message Here'/>
+                            </div>
                           </div>
                         </div>
                     </section>
