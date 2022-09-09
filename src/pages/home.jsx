@@ -96,7 +96,7 @@ const Home = () => {
                     </section>
 
                     {/* Mindset Section */}
-                    <section className='mindset' id="section-3" data-aos="fade-up">
+                    <section className='mindset' id="section-3" data-aos="fade-bottom">
                         <p className='heading'>Mindset</p>
                         <div className="mindset_content">
                            <div className='mindset_singleItem'>
@@ -130,7 +130,7 @@ const Home = () => {
                     </section>
 
                     {/* project Section */}
-                    <section className='projects' id="section-5" >
+                    <section className='projects' id="section-5"  data-aos="fade-up">
                         <p className='heading'>Our Projects</p>
                         <div className='projects_images'>
                             <img src={p1} alt=''/>
@@ -143,7 +143,7 @@ const Home = () => {
                     </section>
 
                     {/* skills Section */}
-                    <section className='skills' id="section-6">
+                    <section className='skills' id="section-6" data-aos="fade-up">
                         <div className='skills_left'>
                             <div>
                                 <p className='heading'>Skills & <br/> Experience</p>
@@ -216,7 +216,7 @@ const Home = () => {
                     </section>
 
                     {/* contact Section */}
-                    <section className='contact' id="section-7">
+                    <section className='contact' id="section-7" data-aos="fade-up">
                         <div className='contact_left'>
                             <div>
                                 <p className='heading'>Lets Discuss Your Project </p>

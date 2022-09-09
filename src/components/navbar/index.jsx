@@ -1,6 +1,6 @@
 import React, { useState, useEffect, Fragment } from "react";
 import Scrollspy from "react-scrollspy";
-
+import avatar from '../../assets/images/Linkitsoft-profile-CV-05.png'
 
 const Navbar = ({ item }) => {
 
@@ -26,8 +26,8 @@ const [clickIndex, setClickIndex] = useState(1)
         </div>
     <div className="leftbar">
         <div className="leftbar_top">
-            <img alt="" src="https://uploads-ssl.webflow.com/62c55bae09e0c918864f54ef/62c567965f116e0fc0d08146_favicon.png" />
-            <p>Mazil</p>
+            <img alt="" src={avatar} />
+            <p>Zohaib</p>
         </div>
         <div className="leftbar_items">
             <ul>
