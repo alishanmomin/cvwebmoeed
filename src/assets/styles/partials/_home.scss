@@ -462,4 +462,66 @@
 
         }
     }
-   
+   @media (max-width: 1000px) {
+    .home_content p {
+        font-size: 2rem;
+    }
+   }
+
+//    contact
+   @media (max-width: 600px) {
+    .contact {
+        flex-direction: column;
+    }
+    .contact_inputSection {
+        margin-top: 0;
+    }
+    .contact_right {
+       margin-left: 0;
+    }
+    .contact {
+        gap: 50px;
+    }
+    .contact_photo {
+        text-align: center;
+    }
+   }
+
+//    skills
+   @media (max-width: 700px) {
+    .skills {
+        flex-direction: column;
+    }
+    .skills_left {
+       width: 100%;
+    }
+    .skills_single p {
+        margin-top: 20px;
+    }
+    .skills_single img {
+        width: 98px;
+    }
+    .skills_right {
+        margin-left: 0;
+    }
+    .skills_single p {
+        text-align: left;
+    }
+    .skills_single {
+        width: 24%;
+    }
+   }
+
+//    projects
+   @media (max-width: 600px) {
+    .projects_images img {
+        width: 45%;
+    }
+    .home_content {
+        flex-direction: column;
+    }
+    .home_content img {
+        width: 58%;
+        margin-top: 33px;
+    }
+   }
