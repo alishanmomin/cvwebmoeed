@@ -1,0 +1,146 @@
+.subMenuDisappear{
+    display: none;
+}
+.leftbar {
+    height: 100vh;
+    color: #fff;
+    width: 450px;
+    background-color: #fff;
+    font-size: 16px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &_top {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        padding: 40px;
+        img {
+            width: 35%
+        }
+        p {
+            color: rgb(54, 54, 54);
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+    ul, li, a {
+     color: rgb(133 133 133);
+        list-style: none;
+        padding: 16px;
+        text-align: left;
+        font-size: 20px;
+        font-weight: 700;
+        cursor: pointer;
+        padding-left: 4px;
+        text-decoration: none;
+    }
+
+    li {
+        span {
+            color: grey;
+            margin-right: 10px;
+        }
+    }
+    li:hover a{
+        background-color:rgb(133 133 133);
+        color: #fff;
+        border-radius: 10px;
+        padding: 14px 26px;
+
+    }
+    .activeSub {
+        background-color: rgb(54, 54, 54);;
+        color: #fff;
+        border-radius: 10px;
+        padding: 14px 26px;
+    }
+    &_items {
+        margin-top: 30px;
+        background-color: #393B4A;
+        border-radius: 0 92px 0 0;
+    }
+}
+.main {
+    margin-left: calc(450px);
+    width: fit-content;
+    height: 100vh;
+    // overflow: auto;
+}
+.subMenu {
+    display: none;
+}
+.fas {
+        display: none;
+    
+}
+.hitn {
+    display: none;
+}
+@media (max-width: 907px) {
+    .main {
+        margin-left: 0;
+        height: 100vh;
+        width: 100%;
+    }
+    .hitn {
+        display: block;
+        position: fixed;
+        z-index: 10000;
+    }
+    .leftbar {
+        display: none;
+    }
+    .subMenuActive {
+        background: #2C384F;
+        height: 100vh;
+        width: 74%;
+        text-align: left;
+        z-index: 2;
+        position: fixed;
+    }
+    .subMenuDisappear {
+        display: none;
+    }
+    .fa-times {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 25px;
+        z-index: 100;
+        color: #ffffff;
+    }
+    .fa-bars {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 25px;
+        z-index: 100;
+        color: #080808;
+    }
+    ul, li, a {
+        color: rgb(230, 230, 230);
+        list-style: none;
+        padding: 16px;
+        text-align: left;
+        font-size: 15px;
+        font-weight: 700;
+        cursor: pointer;
+        padding-left: 4px;
+        text-decoration: none;
+    }
+
+    li {
+        span {
+            color: grey;
+            margin-right: 10px;
+        }
+    }
+    // li:hover a{
+    //     background-color: rgb(54, 54, 54);;
+    //     color: #fff;
+    //     border-radius: 10px;
+    // }
+}
