@@ -26,7 +26,7 @@
         }
     }
     ul, li, a {
-     color: rgb(133 133 133);
+     color: rgba(173, 173, 173, 0.355);
         list-style: none;
         padding: 16px;
         text-align: left;
@@ -46,7 +46,7 @@
     li:hover a{
         color: #fff;
         border-radius: 10px;
-        padding: 14px 26px;
+        // padding: 14px 26px;
 
     }
     .activeSub {
@@ -61,6 +61,7 @@
         border-radius: 0 92px 0 0;
     }
 }
+
 .main {
     margin-left: 240px;
     width: fit-content;

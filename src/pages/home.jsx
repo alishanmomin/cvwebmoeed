@@ -22,6 +22,8 @@ import s5 from '../assets/images/Linkitsoft-profile-CV-24.png'
 import s6 from '../assets/images/Linkitsoft-profile-CV-25.png'
 import s7 from '../assets/images/Linkitsoft-profile-CV-26.png'
 
+import send from '../assets/images/Linkitsoft-profile-CV-28.png'
+
 import inputCircle from '../assets/images/Linkitsoft-profile-CV-27.png'
 
 import AOS from "aos";
@@ -41,15 +43,15 @@ const Home = () => {
                     <section className='home' id="section-1">
                         <div className="home_content" data-aos="fade-bottom">
                             <div className='home_top'>
-                            <p>Hello 👋 I’M SYED ZOHAIB AKHTAR
-                                TECHNOLOGIST THAT USES
-                                DESIGN, PROCESS AND
-                                STRATEGY TO BUILD
-                                GREATE PRODUCTS.
-                            </p>
-                            <div className='btn'>
-                            <button>Contact Us</button>
-                            </div>
+                                <p>Hello 👋 I’M <span> SYED ZOHAIB AKHTAR </span>
+                                    TECHNOLOGIST THAT USES
+                                    DESIGN, PROCESS AND
+                                    STRATEGY TO BUILD
+                                    GREATE PRODUCTS.
+                                </p>
+                                <div className='btn'>
+                                    <button>CONTACT US</button>
+                                </div>
                             </div>
                             <img src={zo}/>
                         </div>
@@ -243,6 +245,9 @@ const Home = () => {
                                 <input type='text' placeholder='Email'/>
                                 <input type='text' placeholder='Subject Line'/>
                                 <input type='text' placeholder='Type Message Here'/>
+                                <div className='contact_btnSnd'>
+                                    <img src={send} alt=''/>
+                                </div>
                             </div>
                           </div>
                         </div>
