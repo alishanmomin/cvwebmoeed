@@ -1,25 +1,34 @@
-import React, { useState, useEffect, Fragment } from "react";
+import React, { useState, useEffect, Fragment, useRef } from "react";
 import Scrollspy from "react-scrollspy";
 import avatar from '../../assets/images/Linkitsoft-profile-CV-05.png'
 
 const Navbar = ({ item }) => {
 
 const [showMenu, setShowMenu] = useState(false)
-const [clickIndex, setClickIndex] = useState(1)
 
+const componentRef = useRef()
 
-const handleChange = () => {
-    setShowMenu(false)
+const closeSidebar = (e) => {
+    if(componentRef){
+       if (!componentRef.current.contains(e.target)) {
+        setShowMenu(false)
+       }
+    }      
 }
+
+useEffect(() => {
+   document.body.addEventListener("click", closeSidebar, true)
+  }, [])
+
   return (
       <Fragment>
         <div className="hitn">
             {!showMenu  && <i className="fas fa-bars" onClick={() => setShowMenu(!showMenu)}></i>}
         </div>        
-        <div className={showMenu ? "subMenuActive" : "subMenuDisappear"}>
-            <i className="fas fa-times" onClick={() => setShowMenu(!showMenu)}></i>
-            <div className="leftbar_items">
-                <ul onClick={handleChange}>
+        <div className={showMenu ? "subMenuActive" : "subMenuDisappear"} onClick={(e) => closeSidebar(e)} ref={componentRef}>
+            {/* <i className="fas fa-times" onClick={() => setShowMenu(!showMenu)}></i> */}
+            <div className="leftbar_items" >
+                <ul onClick={() => setShowMenu(false)}>
                     <li><span>-1</span><a href="#section-1">Hello</a></li>
                     <li><span>-2</span><a href="#section-2">About</a></li>
                     <li><span>-3</span><a href="#section-3">Mindsets</a></li>

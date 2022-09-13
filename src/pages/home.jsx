@@ -36,9 +36,7 @@ const Home = () => {
   return (
     <div className='header'>
         <Navbar item={['section-1', 'section-2', 'section-3', 'section-4', 'section-5', 'section-6', 'section-7']} />
-        <div className='main'>
-              
-
+        <div className='main'>             
                     {/* Hello Section */}
                     <section className='home' id="section-1">
                         <div className="home_content" data-aos="fade-bottom">

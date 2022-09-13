@@ -6,3 +6,9 @@ body {
     background-size: cover;
     position: relative;
 }
+
+@media (max-width: 600px) {
+    .header {
+        margin-top: 100px;
+    }
+}
